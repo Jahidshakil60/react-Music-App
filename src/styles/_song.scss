@@ -1,0 +1,13 @@
+.song-container{
+    height: 80vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  #4F8A8B;
+    img{
+        width: 20%;
+        border-radius: 50%;
+    }
+}
