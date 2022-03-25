@@ -1,10 +1,10 @@
 import React from 'react'
 import LibrarySong from './LibrarySong'
 
-function Library({isPlaying,  audioRef,songs ,setCurrentSong , setSongs}) {
+function Library({isPlaying,  audioRef,songs ,setCurrentSong ,libraryStatus, setSongs}) {
   return (
     <div>
-        <div className="library">
+        <div className={`library ${libraryStatus ? "active-library" : ""}`}>
             <h1>Library Song</h1>
             <div className="library-songs">
                   {songs.map(song =>
